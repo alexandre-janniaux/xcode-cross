@@ -21,7 +21,7 @@ ARG XCODE_URL
 
 RUN set -x \
   && curl -LO $XCODE_URL \
-  && tar --warning=no-unknown-keyword -Jxf $(basename $XCODE_URL) \
+  && tar --warning=no-unknown-keyword -xf $(basename $XCODE_URL) \
   && rm $(basename $XCODE_URL)
 
 RUN set -x \
