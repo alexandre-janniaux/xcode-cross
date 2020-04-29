@@ -36,6 +36,7 @@ ln -sf $CCTOOLS/bin/lipo .
 ln -sf $CCTOOLS/bin/ar .
 ln -sf $CCTOOLS/bin/ranlib .
 ln -sf $CCTOOLS/bin/as .
+ln -sf $CCTOOLS/bin/strip .
 cat<<EOF > clang
 #!/bin/bash
 ARGS=()
